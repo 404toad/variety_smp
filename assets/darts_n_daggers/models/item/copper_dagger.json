@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:item/diamond_sword",
+  "textures": {
+    "layer0": "darts_n_daggers:item/copper_dagger"
+  }
+}

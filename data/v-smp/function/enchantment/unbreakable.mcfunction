@@ -1,0 +1,1 @@
+execute if entity @s[nbt={SelectedItem:{components:{"minecraft:enchantments":{"v-smp:unbreakable":1}}}}] run item modify entity @s weapon {function:"set_components",components:{unbreakable:{}}}

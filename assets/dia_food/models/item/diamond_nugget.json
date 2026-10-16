@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:item/iron_nugget",
+  "textures": {
+    "layer0": "dia_food:item/diamond_nugget"
+  }
+}

@@ -1,0 +1,42 @@
+{
+  "type": "minecraft:multi_action",
+  "title": "26.10.15 Patch Notes",
+  "body": [
+    {
+      "type": "minecraft:item",
+      "item": {
+        "id": "minecraft:structure_block",
+        "components": {
+          "minecraft:enchantment_glint_override": false,
+          "item_model": "minecraft:silverfish_spawn_egg"
+        },
+        "count": 1
+      },
+      "show_decorations": true,
+      "show_tooltip": false
+    },
+    {
+      "type": "minecraft:plain_message",
+      "contents": "Greetings!\n\nYeah, so a plugin I installed BROKE shulkerboxes and DIDN'T EVEN FIX THE ISSUE. Also the spawners from the last update didn't work...\n\nBUT NOW IT WORKS. I just had to re-work the entire system, but yah-know, I'm doing GREAT. No annoyance here! NONE!\n\nANYWAY, I fixed all those issues and I improved the spawners.\n\n---Spawner Improvments---\n-Works\n-You can now use [USE KEY] to remove the spawner and get the item back! How lovely! ITS SO BEAUTIFUL.\n\n---Bug Fixes---\n-Fixed bug caused by plugin\n-Fixed the Spawners\n\nThis server has taken a toll on me for this past update, so I'm going to take a break for a bit. You can keep sending in your ideas and bug reports (That NO ONE fills out)!\n\nI hope you enjoy the new update!\n-Toadec"
+    }
+  ],
+  "can_close_with_escape": true,
+  "actions": [
+    {
+      "label": "Close",
+      "width": 125,
+      "action": {
+        "type": "minecraft:show_dialog",
+        "dialog": "v-smp:patchnotes/main"
+      }
+    },
+    {
+      "label": "Past Update >>>",
+      "width": 125,
+      "action": {
+        "type": "minecraft:show_dialog",
+        "dialog": "v-smp:patchnotes/26.10.14"
+      }
+    }
+  ]
+}

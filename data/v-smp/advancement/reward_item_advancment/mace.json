@@ -1,0 +1,35 @@
+{
+    "parent": "v-smp:variety_root",
+    "display": {
+        "icon": {
+            "id": "minecraft:mace"
+        },
+        "title": "A Smashingly Good Time",
+        "description": "Gain the MACE!",
+        "frame": "goal",
+        "show_toast": true,
+        "announce_to_chat": true,
+        "hidden": false
+    },
+    "criteria": {
+        "trigger": {
+            "trigger": "minecraft:inventory_changed",
+            "conditions": {
+                "items": [
+                    {
+                        "components": {
+                            "minecraft:custom_data": {
+                                "reward_mace": true
+                            }
+                        }
+                    }
+                ]
+            }
+        }
+    },
+    "requirements": [
+        [
+            "trigger"
+        ]
+    ]
+}

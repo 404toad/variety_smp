@@ -1,0 +1,19 @@
+{
+    "parent": "v-smp:reward_item_advancment/mace",
+    "display": {
+        "icon": {
+            "id": "minecraft:structure_block",
+            "components": {}
+        },
+        "title": "Shopping Spreeeee",
+        "description": "Purchase something at the shop",
+        "frame": "goal",
+        "show_toast": true,
+        "announce_to_chat": true
+    },
+    "criteria": {
+        "trigger": {
+            "trigger": "minecraft:impossible"
+        }
+    }
+}

@@ -1,0 +1,37 @@
+{
+    "parent": "v-smp:variety_root",
+    "display": {
+        "icon": {
+            "id": "minecraft:ender_pearl",
+            "components": {
+                "minecraft:enchantment_glint_override": true
+            }
+        },
+        "title": "Can't run from ME!",
+        "description": "Gain the Infinity Pearl reward. I'm well aware you can cheese this one.",
+        "show_toast": true,
+        "announce_to_chat": true,
+        "hidden": false
+    },
+    "criteria": {
+        "trigger": {
+            "trigger": "minecraft:inventory_changed",
+            "conditions": {
+                "items": [
+                    {
+                        "components": {
+                            "minecraft:custom_data": {
+                                "reward_pearl": true
+                            }
+                        }
+                    }
+                ]
+            }
+        }
+    },
+    "requirements": [
+        [
+            "trigger"
+        ]
+    ]
+}

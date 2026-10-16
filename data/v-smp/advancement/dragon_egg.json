@@ -1,0 +1,25 @@
+{
+    "criteria": {
+        "trigger": {
+            "trigger": "minecraft:consume_item",
+            "conditions": {
+                "item": {
+                    "items": "minecraft:poisonous_potato",
+                    "predicates": {
+                        "minecraft:custom_data": {
+                            "reward_dragon_egg": true
+                        }
+                    }
+                }
+            }
+        }
+    },
+    "requirements": [
+        [
+            "trigger"
+        ]
+    ],
+    "rewards": {
+        "function": "v-smp:reward/dragon_egg"
+    }
+}

@@ -1,0 +1,126 @@
+{
+  "type": "minecraft:multi_action",
+  "title": "placeholder",
+  "body": {
+    "type": "minecraft:plain_message",
+    "contents": "Select what spawner you want:"
+  },
+  "inputs": [
+    {
+      "type": "minecraft:boolean",
+      "key": "confirm",
+      "label": "Confirm Purchase?",
+      "on_true": "1",
+      "on_false": "0"
+    }
+  ],
+  "can_close_with_escape": true,
+  "exit_action": {
+    "label": "Back",
+    "action": {
+        "type": "show_dialog",
+        "dialog": "v-smp:shop/main"
+    }
+  },
+  "actions": [
+    {
+      "label": {
+        "atlas": "minecraft:items",
+        "sprite": "minecraft:item/pig_spawn_egg",
+        "extra": [
+          " Pig"
+        ]
+      },
+      "tooltip": "2 Netherite",
+      "width": 65,
+      "action": {
+        "type": "minecraft:dynamic/run_command",
+        "template": "trigger shop_pig set $(confirm)"
+      }
+    },{
+      "label": {
+        "atlas": "minecraft:items",
+        "sprite": "minecraft:item/cow_spawn_egg",
+        "extra": [
+          " Cow"
+        ]
+      },
+      "tooltip": "2 Netherite",
+      "width": 65,
+      "action": {
+        "type": "minecraft:dynamic/run_command",
+        "template": "trigger shop_cow set $(confirm)"
+      }
+    },{
+      "label": {
+        "atlas": "minecraft:items",
+        "sprite": "minecraft:item/sheep_spawn_egg",
+        "extra": [
+          " Sheep"
+        ]
+      },
+      "tooltip": "1 Netherite",
+      "width": 65,
+      "action": {
+        "type": "minecraft:dynamic/run_command",
+        "template": "trigger shop_sheep set $(confirm)"
+      }
+    },{
+      "label": {
+        "atlas": "minecraft:items",
+        "sprite": "minecraft:item/zombie_spawn_egg",
+        "extra": [
+          " Zombie"
+        ]
+      },
+      "tooltip": "1 Netherite",
+      "width": 65,
+      "action": {
+        "type": "minecraft:dynamic/run_command",
+        "template": "trigger shop_zombie set $(confirm)"
+      }
+    },{
+      "label": {
+        "atlas": "minecraft:items",
+        "sprite": "minecraft:item/skeleton_spawn_egg",
+        "extra": [
+          " Skeleton"
+        ]
+      },
+      "tooltip": "2 Netherite",
+      "width": 65,
+      "action": {
+        "type": "minecraft:dynamic/run_command",
+        "template": "trigger shop_skeleton set $(confirm)"
+      }
+    },{
+      "label": {
+        "atlas": "minecraft:items",
+        "sprite": "minecraft:item/creeper_spawn_egg",
+        "extra": [
+          " Creeper"
+        ]
+      },
+      "tooltip": "5 Netherite",
+      "width": 65,
+      "action": {
+        "type": "minecraft:dynamic/run_command",
+        "template": "trigger shop_creeper set $(confirm)"
+      }
+    },{
+      "label": {
+        "atlas": "minecraft:items",
+        "sprite": "minecraft:item/villager_spawn_egg",
+        "extra": [
+          " Villager"
+        ]
+      },
+      "tooltip": "10 Netherite",
+      "width": 65,
+      "action": {
+        "type": "minecraft:dynamic/run_command",
+        "template": "trigger shop_villager set $(confirm)"
+      }
+    }
+  ]
+}

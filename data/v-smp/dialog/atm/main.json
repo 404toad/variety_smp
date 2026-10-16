@@ -1,0 +1,134 @@
+{
+  "type": "minecraft:multi_action",
+  "title": {
+    "text": "ATM",
+    "color": "aqua"
+  },
+  "external_title": "ATM",
+  "body": {
+    "type": "minecraft:plain_message",
+    "contents": "Convert Currency"
+  },
+  "inputs": [
+    {
+      "type": "minecraft:single_option",
+      "key": "id",
+      "label": "Conversion",
+      "label_visible": false,
+      "options": [
+        {
+          "id": "atm_dn",
+          "display": {
+            "atlas": "minecraft:items",
+            "sprite": "minecraft:item/diamond",
+            "extra": [
+              {
+                "text": "32 -> 1"
+              },
+              {
+                "atlas": "minecraft:items",
+                "sprite": "minecraft:item/netherite_ingot"
+              }
+            ]
+          }
+        },{
+          "id": "atm_nd",
+          "display": {
+            "atlas": "minecraft:items",
+            "sprite": "minecraft:item/diamond",
+            "extra": [
+              {
+                "text": "32 <- 1"
+              },
+              {
+                "atlas": "minecraft:items",
+                "sprite": "minecraft:item/netherite_ingot"
+              }
+            ]
+          }
+        },{
+          "id": "atm_de",
+          "display": {
+            "atlas": "minecraft:items",
+            "sprite": "minecraft:item/diamond",
+            "extra": [
+              {
+                "text": "32 -> 1"
+              },
+              {
+                "atlas": "minecraft:items",
+                "sprite": "minecraft:item/elytra"
+              }
+            ]
+          }
+        },{
+          "id": "atm_ed",
+          "display": {
+            "atlas": "minecraft:items",
+            "sprite": "minecraft:item/diamond",
+            "extra": [
+              {
+                "text": "32 <- 1"
+              },
+              {
+                "atlas": "minecraft:items",
+                "sprite": "minecraft:item/elytra"
+              }
+            ]
+          }
+        },{
+          "id": "atm_ne",
+          "display": {
+            "atlas": "minecraft:items",
+            "sprite": "minecraft:item/netherite_ingot",
+            "extra": [
+              {
+                "text": "1 -> 1"
+              },
+              {
+                "atlas": "minecraft:items",
+                "sprite": "minecraft:item/elytra"
+              }
+            ]
+          }
+        },{
+          "id": "atm_en",
+          "display": {
+            "atlas": "minecraft:items",
+            "sprite": "minecraft:item/netherite_ingot",
+            "extra": [
+              {
+                "text": "1 <- 1"
+              },
+              {
+                "atlas": "minecraft:items",
+                "sprite": "minecraft:item/elytra"
+              }
+            ]
+          }
+        }
+      ],
+      "width": 100
+    }
+  ],
+  "actions": [
+    {
+      "label": {
+        "text": "Convert",
+        "color": "green"
+      },
+      "width": 50,
+      "action": {
+        "type": "minecraft:dynamic/run_command",
+        "template": "trigger $(id) set 1"
+      }
+    },
+    {
+      "label": {
+        "text": "Cancel",
+        "color": "red"
+      },
+      "width": 50
+    }
+  ]
+}

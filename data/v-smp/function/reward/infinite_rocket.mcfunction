@@ -1,0 +1,1 @@
+item replace entity @s weapon.mainhand with firework_rocket[enchantment_glint_override=true,lore=[{text:'-----------',color:"dark_gray",italic:0b,obfuscated:1b},{text:"Reward Item",color:gold}],item_name={text:"Infinity Rocket",color:red,bold:true},custom_data={reward_rocket:true},max_stack_size=1]

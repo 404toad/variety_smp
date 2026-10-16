@@ -1,0 +1,169 @@
+{
+    "type": "minecraft:multi_action",
+    "title": [
+        {
+            "text": "Welcome to the ",
+            "hover_event": {
+                "action": "show_text",
+                "value": "You can purchase certain reward items here"
+            }
+        },
+        {
+            "text": "Item Shop",
+            "color": "yellow",
+            "hover_event": {
+                "action": "show_text",
+                "value": "You can purchase certain reward items here"
+            }
+        },
+        {
+            "text": "!",
+            "hover_event": {
+                "action": "show_text",
+                "value": "You can purchase certain reward items here"
+            }
+        }
+    ],
+    "external_title": "Shop",
+    "body": {
+        "type": "minecraft:plain_message",
+        "contents": {
+            "text": "Here you can buy some of the custom items I created. More will be added as they come out.",
+            "color": "white",
+            "extra": [
+                {
+                    "text": "\n\nClick here to suggest items",
+                    "color": "aqua",
+                    "click_event": {
+                        "action": "open_url",
+                        "url": "https://discord.gg/Rt7dh629gG"
+                    },
+                    "underlined": true,
+                    "bold": true
+                }
+            ]
+        }
+    },
+    "inputs": [
+        {
+            "type": "minecraft:boolean",
+            "key": "confirm",
+            "label": {
+                "text": "Confirm Purchase?"
+            },
+            "initial": false,
+            "on_true": "1",
+            "on_false": "0"
+        }
+    ],
+    "can_close_with_escape": true,
+    "exit_action": {
+        "label": "Close Shop"
+    },
+    "actions": [
+        {
+            "label": {
+                "atlas": "minecraft:items",
+                "sprite": "minecraft:item/ender_pearl",
+                "extra": [
+                    " Infinity Pearl"
+                ]
+            },
+            "tooltip": "1 Elytra",
+            "width": 100,
+            "action": {
+                "type": "minecraft:dynamic/run_command",
+                "template": "trigger shop_pearl set $(confirm)"
+            }
+        },
+        {
+            "label": {
+                "atlas": "minecraft:items",
+                "sprite": "minecraft:item/firework_rocket",
+                "extra": [
+                    " Infinite Rocket"
+                ]
+            },
+            "tooltip": "1 Elytra",
+            "width": 100,
+            "action": {
+                "type": "minecraft:dynamic/run_command",
+                "template": "trigger shop_rocket set $(confirm)"
+            }
+        },
+        {
+            "label": {
+                "atlas": "minecraft:items",
+                "sprite": "minecraft:item/enchanted_book",
+                "extra": [
+                    " Unbreakable"
+                ]
+            },
+            "tooltip": "64 Diamonds",
+            "width": 100,
+            "action": {
+                "type": "minecraft:dynamic/run_command",
+                "template": "trigger shop_unbreakable set $(confirm)"
+            }
+        },
+        {
+            "label": {
+                "atlas": "minecraft:items",
+                "sprite": "minecraft:item/golden_shovel",
+                "extra": [
+                    " Speedy Shovel"
+                ]
+            },
+            "tooltip": "32 Diamonds",
+            "width": 100,
+            "action": {
+                "type": "minecraft:dynamic/run_command",
+                "template": "trigger shop_shovel set $(confirm)"
+            }
+        },
+        {
+            "label": {
+                "atlas": "minecraft:gui",
+                "sprite": "minecraft:icon/draft_report",
+                "extra": [
+                    " Magic 8-Ball"
+                ]
+            },
+            "tooltip": "16 Diamonds",
+            "width": 100,
+            "action": {
+                "type": "minecraft:dynamic/run_command",
+                "template": "trigger shop_8ball set $(confirm)"
+            }
+        },
+        {
+            "label": {
+                "atlas": "minecraft:blocks",
+                "sprite": "minecraft:block/spawner",
+                "extra": [
+                    " Spawner"
+                ]
+            },
+            "width": 100,
+            "action": {
+                "type": "minecraft:show_dialog",
+                "dialog": "v-smp:shop/spawner"
+            }
+        },
+        {
+            "label": {
+                "atlas": "minecraft:items",
+                "sprite": "minecraft:item/creeper_banner_pattern",
+                "extra": [
+                    " Animal Carrier"
+                ]
+            },
+            "tooltip": "20 Diamonds",
+            "width": 100,
+            "action": {
+                "type": "minecraft:dynamic/run_command",
+                "template": "trigger shop_carrier set $(confirm)"
+            }
+        }
+    ]
+}

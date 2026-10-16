@@ -1,0 +1,28 @@
+{
+    "parent": "v-smp:variety_root",
+    "display": {
+        "icon": {
+            "id": "minecraft:dragon_egg"
+        },
+        "title": "Uno-Reverse!",
+        "description": "Use the Dragon Egg's special ability!",
+        "frame": "challenge",
+        "show_toast": true,
+        "announce_to_chat": true,
+        "hidden": false
+    },
+    "criteria": {
+        "trigger": {
+            "trigger": "minecraft:consume_item",
+            "conditions": {
+                "item": {
+                    "components": {
+                        "minecraft:custom_data": {
+                            "reward_dragon_egg": true
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

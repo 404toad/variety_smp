@@ -1,0 +1,1 @@
+$give @s pig_spawn_egg[item_name="Animal Carrier",enchantment_glint_override=true,rarity=uncommon,entity_data={id:pig,Age:$(Age),equipment:$(equipment),variant:"$(variant)",AgeLocked:$(AgeLocked),AbsorptionAmount:$(AbsorptionAmount),Air:$(Air),Brain:$(Brain),CanPickUpLoot:$(CanPickUpLoot),PersistenceRequired:$(PersistenceRequired)}]

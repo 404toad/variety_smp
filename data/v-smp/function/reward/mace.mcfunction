@@ -1,0 +1,2 @@
+item modify entity @s[nbt={SelectedItem:{id:"minecraft:mace"}}] weapon.mainhand {function:"set_components",components:{item_name:"The Mace",custom_data:{reward_mace:true},lore:[{text:'-----------',color:"dark_gray",italic:0b,obfuscated:1b},{text:"Reward Item",color:gold}],consumable:{sound:{sound_id:""},consume_seconds:999999999,has_consume_particles:0b},"minecraft:unbreakable":{},use_cooldown:{seconds:3}}}
+

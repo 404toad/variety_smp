@@ -1,0 +1,1 @@
+$give @s sheep_spawn_egg[item_name="Animal Carrier",enchantment_glint_override=true,rarity=uncommon,entity_data={id:sheep,Age:$(Age),equipment:$(equipment),Color:$(Color),Sheared:$(Sheared),AgeLocked:$(AgeLocked),AbsorptionAmount:$(AbsorptionAmount),Air:$(Air),Brain:$(Brain),CanPickUpLoot:$(CanPickUpLoot),PersistenceRequired:$(PersistenceRequired)}]

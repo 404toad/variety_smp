@@ -1,0 +1,49 @@
+{
+  "type": "minecraft:multi_action",
+  "title": "26.10.12 Patch Notes",
+  "body": [
+    {
+      "type": "minecraft:item",
+      "item": {
+        "id": "minecraft:structure_block",
+        "components": {
+          "minecraft:enchantment_glint_override": true,
+          "item_model": "variety:eightball"
+        },
+        "count": 1
+      },
+      "show_decorations": true,
+      "show_tooltip": false
+    },
+    {
+      "type": "minecraft:plain_message",
+      "contents": "Greetings!\n\nHuge thanks to all you guys who left suggestions, especially Nelson; I'm currently working on implementing your amaz... your ideas! (jk). \n\nAnyway, I've added one of the more complex items:\nTHE MAGIC 8-BALL (Idea by Inkling9578)!\n-Right click to gain THREE random effects for the next 30 seconds. Effects include: [ALL ~40 EFFECTS IN JAVA EDITION]\nThe item is avalible in the shop for 16 Diamonds, or you can craft it, so check your recipe book!\nThe item also has it's own advancement, so THERE. DAMN COMPLETIONISTS.\n\n---Resource Pack Changes---\n-Added texture for \"Magic 8-Ball\"\n-Added textures for \"Darts & Daggers\" (Currently Functionality: None)\n\n---Bug Fixes---\n-Ghost mace with \"/give\" is no longer an issue\n-Gunpowder dupe patched\n\n---Known Bugs---\n-Items randomly becoming Unbreakable\n-Mace needs nerf\n\nThanks for reading, and good job to August for winning the mace!"
+    }
+  ],
+  "can_close_with_escape": true,
+  "actions": [
+    {
+      "label": "<<< Recent Update",
+      "width": 125,
+      "action": {
+        "type": "minecraft:show_dialog",
+        "dialog": "v-smp:patchnotes/26.10.14"
+      }
+    },
+    {
+      "label": "Past Update >>>",
+      "width": 125,
+      "action": {
+        "type": "minecraft:show_dialog",
+        "dialog": "v-smp:patchnotes/26.10.9"
+      }
+    },{
+      "label": "Close",
+      "width": 125,
+      "action": {
+        "type": "minecraft:show_dialog",
+        "dialog": "v-smp:patchnotes/main"
+      }
+    }
+  ]
+}

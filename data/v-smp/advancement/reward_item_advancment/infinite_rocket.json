@@ -1,0 +1,34 @@
+{
+    "parent": "v-smp:reward_item_advancment/infinite_pearl",
+    "display": {
+        "icon": {
+            "id": "minecraft:firework_rocket",
+            "components": {
+                "minecraft:enchantment_glint_override": true
+            }
+        },
+        "title": {
+            "text": "Imortal Flight"
+        },
+        "description": "Earn the Infinity Firework",
+        "show_toast": true,
+        "announce_to_chat": true,
+        "hidden": false
+    },
+    "criteria": {
+        "trigger": {
+            "trigger": "minecraft:inventory_changed",
+            "conditions": {
+                "items": [
+                    {
+                        "components": {
+                            "minecraft:custom_data": {
+                                "reward_rocket": true
+                            }
+                        }
+                    }
+                ]
+            }
+        }
+    }
+}

@@ -1,0 +1,27 @@
+{
+    "criteria": {
+        "trigger": {
+            "trigger": "minecraft:player_interacted_with_entity",
+            "conditions": {
+                "item": {
+                    "components": {
+                        "minecraft:custom_data": {
+                            "carrier": true
+                        }
+                    }
+                },
+                "entity": {
+                    "entity_type": "minecraft:cow"
+                }
+            }
+        }
+    },
+    "requirements": [
+        [
+            "trigger"
+        ]
+    ],
+    "rewards": {
+        "function": "v-smp:reward/carrier/cow"
+    }
+}

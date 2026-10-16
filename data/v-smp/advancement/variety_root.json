@@ -1,0 +1,23 @@
+{
+    "display": {
+        "icon": {
+            "id": "minecraft:structure_block",
+            "components": {
+                "minecraft:item_model": "variety:variety_icon"
+            }
+        },
+        "title": "Variety SMP",
+        "description": {
+            "text": "Welcome!",
+            "color": "green"
+        },
+        "show_toast": false,
+        "announce_to_chat": false,
+        "background": "minecraft:block/bedrock"
+    },
+    "criteria": {
+        "trigger": {
+            "trigger": "minecraft:tick"
+        }
+    }
+}

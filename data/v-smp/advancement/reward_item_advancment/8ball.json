@@ -1,0 +1,37 @@
+{
+    "parent": "v-smp:reward_item_advancment/infinite_rocket",
+    "display": {
+        "icon": {
+            "id": "minecraft:structure_void",
+            "components": {
+                "minecraft:item_model": "variety:eightball"
+            }
+        },
+        "title": "Tempting Fate",
+        "description": "Use the Magic 8-Ball item!",
+        "show_toast": true,
+        "announce_to_chat": true,
+        "hidden": false
+    },
+    "criteria": {
+        "trigger": {
+            "trigger": "minecraft:inventory_changed",
+            "conditions": {
+                "items": [
+                    {
+                        "components": {
+                            "minecraft:custom_data": {
+                                "eball": true
+                            }
+                        }
+                    }
+                ]
+            }
+        }
+    },
+    "requirements": [
+        [
+            "trigger"
+        ]
+    ]
+}

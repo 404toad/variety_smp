@@ -1,0 +1,8 @@
+{
+    "replace": false,
+    "values": [
+        "v-smp:shop/main",
+        "v-smp:patchnotes/main",
+        "v-smp:atm/main"
+    ]
+}

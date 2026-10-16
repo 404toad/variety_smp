@@ -1,0 +1,53 @@
+{
+  "type": "minecraft:multi_action",
+  "title": {
+    "text": "Server Patch Notes",
+    "color": "green"
+  },
+  "external_title": "Patch Notes",
+  "body": {
+    "type": "minecraft:plain_message",
+    "contents": "Catalog of server updates"
+  },
+  "can_close_with_escape": true,
+  "exit_action": {
+    "label": "Back"
+  },
+  "actions": [
+    {
+      "label": "26.10.15",
+      "tooltip": "Bug Fixes",
+      "width": 50,
+      "action": {
+        "type": "minecraft:show_dialog",
+        "dialog": "v-smp:patchnotes/26.10.15"
+      }
+    },{
+      "label": "26.10.14",
+      "tooltip": "Spawners",
+      "width": 50,
+      "action": {
+        "type": "minecraft:show_dialog",
+        "dialog": "v-smp:patchnotes/26.10.14"
+      }
+    },
+    {
+      "label": "26.10.12",
+      "tooltip": "Magic 8-Ball",
+      "width": 50,
+      "action": {
+        "type": "minecraft:show_dialog",
+        "dialog": "v-smp:patchnotes/26.10.12"
+      }
+    },
+    {
+      "label": "26.10.9",
+      "tooltip": "Speedy Shovel",
+      "width": 50,
+      "action": {
+        "type": "minecraft:show_dialog",
+        "dialog": "v-smp:patchnotes/26.10.9"
+      }
+    }
+  ]
+}

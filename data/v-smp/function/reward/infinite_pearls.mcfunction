@@ -1,0 +1,1 @@
+item replace entity @s weapon.mainhand with ender_pearl[custom_data={reward_pearl:true},enchantment_glint_override=1b,item_name=[{text:"Infinity Pearl",obfuscated:0b,color:"aqua"}],rarity=rare,max_stack_size=1,lore=[{text:'-----------',color:"dark_gray",italic:0b,obfuscated:1b},{text:"Reward Item",color:gold}]]
