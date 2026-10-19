@@ -26,6 +26,7 @@ scoreboard players enable @a cos_santa
 scoreboard players enable @a cos_cat
 scoreboard players enable @a cos_emerald
 scoreboard players enable @a cos_key
+scoreboard players enable @a strip_trims
 #spawners
 scoreboard players enable @a shop_cow
 scoreboard players enable @a shop_pig
@@ -139,7 +140,7 @@ execute as @a[scores={atm_en=1,elytra=1..}] run function v-smp:atm/main {input:"
 execute as @a[scores={atm_nd=1,netherite=1..}] run function v-smp:atm/main {input:"netherite_ingot",i:"1",output:"diamond",o:"32"}
 execute as @a[scores={atm_ne=1,netherite=1..}] run function v-smp:atm/main {input:"netherite_ingot",i:"1",output:"elytra",o:"1"}
 
-
+execute as @a[scores={strip_trims=1..}] run function v-smp:trim_strip
 
 scoreboard players set @a atm_dn 0
 scoreboard players set @a atm_de 0
@@ -163,6 +164,7 @@ scoreboard players set @a shop_skeleton 0
 scoreboard players set @a shop_creeper 0
 scoreboard players set @a shop_villager 0
 scoreboard players set @a shop_carrier 0
+scoreboard players set @a strip_trims 0
 
 execute as @a if score @s cos_orphan matches 1.. run scoreboard players remove @s cos_orphan 1
 execute as @a if score @s cos_santa matches 1.. run scoreboard players remove @s cos_santa 1

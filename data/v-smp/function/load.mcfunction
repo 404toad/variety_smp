@@ -57,3 +57,4 @@ scoreboard objectives add cos_cat trigger
 scoreboard objectives add cos_emerald trigger
 
 scoreboard objectives add cos_key trigger
+scoreboard objectives add strip_trims trigger
