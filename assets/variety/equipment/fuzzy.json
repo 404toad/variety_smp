@@ -1,0 +1,14 @@
+{
+    "layers": {
+        "humanoid": [
+            {
+                "texture": "variety:fuzzy"
+            }
+        ],
+        "humanoid_leggings": [
+            {
+                "texture": "variety:fuzzy"
+            }
+        ]
+    }
+}

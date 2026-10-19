@@ -1,0 +1,1 @@
+execute positioned over world_surface run summon minecraft:armor_stand ~ ~ ~ {Tags:["cos_stand"],Marker:1b,Invisible:1b}

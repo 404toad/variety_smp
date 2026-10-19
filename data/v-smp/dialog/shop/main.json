@@ -158,11 +158,26 @@
                     " Animal Carrier"
                 ]
             },
-            "tooltip": "20 Diamonds",
+            "tooltip": "1 Diamond",
             "width": 100,
             "action": {
                 "type": "minecraft:dynamic/run_command",
                 "template": "trigger shop_carrier set $(confirm)"
+            }
+        },
+        {
+            "label": {
+                "atlas": "minecraft:items",
+                "sprite": "minecraft:item/netherite_upgrade_smithing_template",
+                "extra": [
+                    " Cosmetic Key"
+                ]
+            },
+            "width": 100,
+            "tooltip": "10 Diamonds",
+            "action": {
+                "type": "minecraft:dynamic/run_command",
+                "template": "trigger cos_key set $(confirm)"
             }
         }
     ]

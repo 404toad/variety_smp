@@ -1,0 +1,20 @@
+{
+    "type": "minecraft:smithing_transform",
+    "base": "minecraft:chainmail_chestplate",
+    "template": "minecraft:structure_block",
+    "result": {
+        "id": "minecraft:chainmail_chestplate",
+        "components": {
+            "minecraft:lore": [
+                {"text":"Emerald Cosmetic","color":"dark_gray","italic":false}
+            ],
+            "minecraft:equippable": {
+                "slot": "chest",
+                "asset_id": "variety:emerald",
+                "equip_sound": "item.armor.equip_diamond"
+            },
+            "item_model": "variety:emerald_chestplate" ,
+            "custom_data": {"cos":true}
+        }
+    }
+}

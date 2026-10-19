@@ -1,0 +1,52 @@
+{
+  "type": "minecraft:multi_action",
+  "title": {
+    "text": "Cosmetic Shop"
+  },
+  "body": {
+    "type": "minecraft:plain_message",
+    "contents": "Welcome to the Cosmetic Shop! Here you can buy cosmetic armor upgrades to express yourself! \n\nAll purchases are PURLEY cosmetic, meaning that they all have the stats of whatever armor you apply it to!"
+  },
+  "inputs": [
+    {
+      "type": "minecraft:number_range",
+      "key": "amt",
+      "label": "Amount",
+      "start": 1,
+      "end": 4,
+      "step": 1,
+      "initial": 1
+    }
+  ],
+  "can_close_with_escape": true,
+  "columns": 5,
+  "actions": [
+    {
+      "label": "Emerald",
+      "tooltip": "10 Diamonds; Applies To [ARMOR]",
+      "width": 60,
+      "action": {
+        "type": "minecraft:dynamic/run_command",
+        "template": "trigger cos_emerald set $(amt)"
+      }
+    },
+    {
+      "label": "Orphan Slayer",
+      "tooltip": "20 Diamonds; Applies To [ARMOR]",
+      "width": 80,
+      "action": {
+        "type": "minecraft:dynamic/run_command",
+        "template": "trigger cos_orphan set $(amt)"
+      }
+    },
+    {
+      "label": "Cat",
+      "tooltip": "5 Diamonds; Applies To [ARMOR]",
+      "width": 30,
+      "action": {
+        "type": "minecraft:dynamic/run_command",
+        "template": "trigger cos_cat set $(amt)"
+      }
+    }
+  ]
+}

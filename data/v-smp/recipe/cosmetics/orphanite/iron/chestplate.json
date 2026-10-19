@@ -1,0 +1,20 @@
+{
+    "type": "minecraft:smithing_transform",
+    "base": "minecraft:iron_chestplate",
+    "template": "minecraft:command_block",
+    "result": {
+        "id": "minecraft:iron_chestplate",
+        "components": {
+            "minecraft:lore": [
+                {"text":"Orphan Slayer Cosmetic","color":"dark_gray","italic":false}
+            ],
+            "minecraft:equippable": {
+                "slot": "chest",
+                "asset_id": "variety:orphanite",
+                "equip_sound": "item.armor.equip_netherite"
+            },
+            "item_model": "variety:orphanite_chestplate",
+            "custom_data": {"cos":true}
+        }
+    }
+}

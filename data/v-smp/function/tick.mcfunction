@@ -3,21 +3,29 @@ effect give KANGAROO7145 night_vision infinite 255 true
 execute as @a store result score @s diamonds run clear @s diamond 0
 execute as @a store result score @s netherite run clear @s netherite_ingot 0
 execute as @a store result score @s elytra run clear @s elytra 0
+execute as @a store result score @s iron run clear @s iron_ingot 0
 
+
+#atm
 scoreboard players enable @a atm_dn
 scoreboard players enable @a atm_de
-
 scoreboard players enable @a atm_ed
 scoreboard players enable @a atm_en
-
 scoreboard players enable @a atm_nd
 scoreboard players enable @a atm_ne
-
+#shop
 scoreboard players enable @a shop_pearl
 scoreboard players enable @a shop_rocket
 scoreboard players enable @a shop_unbreakable
 scoreboard players enable @a shop_shovel
 scoreboard players enable @a shop_8ball
+scoreboard players enable @a shop_carrier
+#cosmetics
+scoreboard players enable @a cos_orphan
+scoreboard players enable @a cos_santa
+scoreboard players enable @a cos_cat
+scoreboard players enable @a cos_emerald
+scoreboard players enable @a cos_key
 #spawners
 scoreboard players enable @a shop_cow
 scoreboard players enable @a shop_pig
@@ -27,7 +35,6 @@ scoreboard players enable @a shop_skeleton
 scoreboard players enable @a shop_creeper
 scoreboard players enable @a shop_villager
 #
-scoreboard players enable @a shop_carrier
 
 #ender pearl
 execute as @a[tag=!reward_pearl] run clear @s ender_pearl[custom_data={reward_pearl:true}]
@@ -39,6 +46,7 @@ kill @e[type=item,nbt={Item:{components:{"minecraft:custom_data":{reward_pearl:t
 execute as @a[tag=!reward_rocket] run clear @s firework_rocket[custom_data={reward_rocket:true}]
 execute as @a[tag=reward_rocket] unless entity @s[nbt={Inventory:[{components:{"minecraft:custom_data":{reward_rocket:true}}}]}] unless entity @s[nbt={SelectedItem:{}}] run function v-smp:reward/infinite_rocket
 kill @e[type=item,nbt={Item:{components:{"minecraft:custom_data":{reward_rocket:true}}}}]
+
 
 
 #dragon egg replace
@@ -110,10 +118,17 @@ execute as @a[scores={shop_zombie=1,netherite=1..}] run function v-smp:shop/spaw
 execute as @a[scores={shop_skeleton=1,netherite=2..}] run function v-smp:shop/spawner/skeleton
 execute as @a[scores={shop_creeper=1,netherite=5..}] run function v-smp:shop/spawner/creeper
 execute as @a[scores={shop_villager=1,netherite=10..}] run function v-smp:shop/spawner/villager
-execute as @a[scores={shop_carrier=1,diamonds=20..}] run function v-smp:shop/shop_carrier
+execute as @a[scores={shop_carrier=1,diamonds=1..}] run function v-smp:shop/shop_carrier
+
+execute as @a[scores={cos_orphan=1..,diamonds=20..}] run function v-smp:shop/cosmetics/shop_orphan
+execute as @a[scores={cos_santa=1..,iron=10..}] run function v-smp:shop/cosmetics/shop_santa
+execute as @a[scores={cos_cat=1..,diamonds=5..}] run function v-smp:shop/cosmetics/shop_cat
+execute as @a[scores={cos_emerald=1..,diamonds=10..}] run function v-smp:shop/cosmetics/shop_emerald
+execute as @a[scores={cos_key=1..,diamonds=10..}] run function v-smp:shop/cosmetics/key
 
 scoreboard players set @a click 0
-
+execute as @e[tag=cos_stand] at @s unless block ~ ~ ~ vault run setblock ~ ~ ~ minecraft:vault{config:{key_item:{id:"minecraft:trial_key",components:{custom_data:{coskey:1b},item_model:"variety:cosmetic_key",item_name:"Cosmetic Key",rarity:rare}},loot_table:"v-smp:cosmetics"}}
+execute as @e[tag=cos_stand] at @s if data block ~ ~ ~ server_data.rewarded_players[] if block ~ ~ ~ vault[vault_state=inactive] run data modify block ~ ~ ~ server_data.rewarded_players set value []
 
 execute as @a[scores={atm_dn=1,diamonds=32..}] run function v-smp:atm/main {input:"diamond",output:"netherite_ingot",i:"32",o:"1"}
 execute as @a[scores={atm_de=1,diamonds=32..}] run function v-smp:atm/main {input:"diamond",i:"32",output:"elytra",o:"1"}
@@ -124,6 +139,8 @@ execute as @a[scores={atm_en=1,elytra=1..}] run function v-smp:atm/main {input:"
 execute as @a[scores={atm_nd=1,netherite=1..}] run function v-smp:atm/main {input:"netherite_ingot",i:"1",output:"diamond",o:"32"}
 execute as @a[scores={atm_ne=1,netherite=1..}] run function v-smp:atm/main {input:"netherite_ingot",i:"1",output:"elytra",o:"1"}
 
+
+
 scoreboard players set @a atm_dn 0
 scoreboard players set @a atm_de 0
 
@@ -132,8 +149,6 @@ scoreboard players set @a atm_ne 0
 
 scoreboard players set @a atm_en 0
 scoreboard players set @a atm_ed 0
-
-
 
 scoreboard players set @a shop_unbreakable 0
 scoreboard players set @a shop_pearl 0
@@ -149,7 +164,14 @@ scoreboard players set @a shop_creeper 0
 scoreboard players set @a shop_villager 0
 scoreboard players set @a shop_carrier 0
 
+execute as @a if score @s cos_orphan matches 1.. run scoreboard players remove @s cos_orphan 1
+execute as @a if score @s cos_santa matches 1.. run scoreboard players remove @s cos_santa 1
+execute as @a if score @s cos_cat matches 1.. run scoreboard players remove @s cos_cat 1
+execute as @a if score @s cos_emerald matches 1.. run scoreboard players remove @s cos_emerald 1
+execute as @a if score @s cos_key matches 1.. run scoreboard players remove @s cos_key 1
+
+
 recipe give @a *
 
-tellraw @a[scores={update=..1}] ["\n",{atlas:"minecraft:gui",sprite:"minecraft:icon/news"},{text:" New Server Update! ",color:green},{atlas:"minecraft:gui",sprite:"minecraft:icon/news"},"\n",{text:"Click here to view patch notes to see what changed!",color:gold,click_event:{action:show_dialog,dialog:"v-smp:patchnotes/26.10.15"},bold:true},"\n"]
+tellraw @a[scores={update=..1}] ["\n",{atlas:"minecraft:gui",sprite:"minecraft:icon/news"},{text:" New Server Update! ",color:green},{atlas:"minecraft:gui",sprite:"minecraft:icon/news"},"\n",{text:"Click here to view patch notes to see what changed!",color:gold,click_event:{action:show_dialog,dialog:"v-smp:patchnotes/26.10.18"},bold:true},"\n"]
 scoreboard players reset @s update

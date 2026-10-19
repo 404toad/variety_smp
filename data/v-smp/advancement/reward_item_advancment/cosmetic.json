@@ -1,0 +1,32 @@
+{
+    "parent": "v-smp:reward_item_advancment/dragon_egg",
+    "display": {
+        "icon": {
+            "id": "minecraft:structure_void",
+            "components": {
+                "minecraft:item_model": "variety:cosmetic_upgrade"
+            }
+        },
+        "title": "Crafting A New-NEW Look",
+        "description": "Get a Cosmetic Upgrade for your armor!",
+        "frame": "challenge",
+        "show_toast": true,
+        "announce_to_chat": true
+    },
+    "criteria": {
+        "trigger": {
+            "trigger": "minecraft:inventory_changed",
+            "conditions": {
+                "items": [
+                    {
+                        "components": {
+                            "minecraft:custom_data": {
+                                "cos": true
+                            }
+                        }
+                    }
+                ]
+            }
+        }
+    }
+}

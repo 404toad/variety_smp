@@ -15,6 +15,14 @@
   },
   "actions": [
     {
+      "label": "26.10.18",
+      "tooltip": "Cosmetic Upgrade",
+      "width": 50,
+      "action": {
+        "type": "minecraft:show_dialog",
+        "dialog": "v-smp:patchnotes/26.10.18"
+      }
+    },{
       "label": "26.10.15",
       "tooltip": "Bug Fixes",
       "width": 50,

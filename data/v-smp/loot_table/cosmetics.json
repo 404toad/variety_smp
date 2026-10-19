@@ -1,0 +1,89 @@
+{
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:command_block",
+          "conditions": [],
+          "functions": [
+            {
+              "function": "minecraft:set_components",
+              "components": {
+                "minecraft:item_name": "Orphan Slayer",
+                "minecraft:rarity": "uncommon",
+                "minecraft:lore": [
+                  {
+                    "text": "----------------",
+                    "color": "dark_gray",
+                    "italic": false
+                  },
+                  {
+                    "text": "Cosmetic Upgrade",
+                    "color": "gray",
+                    "italic": false
+                  }
+                ],
+                "minecraft:item_model": "variety:orphanite_cosmetic"
+              }
+            }
+          ]
+        },{
+          "type": "minecraft:item",
+          "name": "minecraft:jigsaw",
+          "conditions": [],
+          "functions": [
+            {
+              "function": "minecraft:set_components",
+              "components": {
+                "minecraft:item_name": "Cat Suit",
+                "minecraft:rarity": "uncommon",
+                "minecraft:lore": [
+                  {
+                    "text": "----------------",
+                    "color": "dark_gray",
+                    "italic": false
+                  },
+                  {
+                    "text": "Cosmetic Upgrade",
+                    "color": "gray",
+                    "italic": false
+                  }
+                ],
+                "minecraft:item_model": "variety:fuzzy_cosmetic"
+              }
+            }
+          ]
+        },{
+          "type": "minecraft:item",
+          "name": "minecraft:structure_block",
+          "conditions": [],
+          "functions": [
+            {
+              "function": "minecraft:set_components",
+              "components": {
+                "minecraft:item_name": "Emerald",
+                "minecraft:rarity": "uncommon",
+                "minecraft:lore": [
+                  {
+                    "text": "----------------",
+                    "color": "dark_gray",
+                    "italic": false
+                  },
+                  {
+                    "text": "Cosmetic Upgrade",
+                    "color": "gray",
+                    "italic": false
+                  }
+                ],
+                "minecraft:item_model": "variety:emerald_cosmetic"
+              }
+            }
+          ]
+        }
+      ],
+      "conditions": []
+    }
+  ]
+}

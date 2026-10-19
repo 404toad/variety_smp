@@ -20,15 +20,14 @@ scoreboard objectives add mob_kills minecraft.custom:minecraft.mob_kills
 scoreboard objectives add diamonds dummy
 scoreboard objectives add netherite dummy
 scoreboard objectives add elytra dummy
+scoreboard objectives add iron dummy
 
 scoreboard objectives add effect_id dummy
 
 scoreboard objectives add update minecraft.custom:play_time
 scoreboard players reset @a update
 
-
 scoreboard objectives add name dummy
-
 
 scoreboard objectives add atm_en trigger
 scoreboard objectives add atm_ed trigger
@@ -51,3 +50,10 @@ scoreboard objectives add shop_skeleton trigger
 scoreboard objectives add shop_creeper trigger
 scoreboard objectives add shop_villager trigger
 scoreboard objectives add shop_carrier trigger
+
+scoreboard objectives add cos_orphan trigger
+scoreboard objectives add cos_santa trigger
+scoreboard objectives add cos_cat trigger
+scoreboard objectives add cos_emerald trigger
+
+scoreboard objectives add cos_key trigger

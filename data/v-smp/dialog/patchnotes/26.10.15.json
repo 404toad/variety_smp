@@ -23,11 +23,11 @@
   "can_close_with_escape": true,
   "actions": [
     {
-      "label": "Close",
+      "label": "<<< Recent Update",
       "width": 125,
       "action": {
         "type": "minecraft:show_dialog",
-        "dialog": "v-smp:patchnotes/main"
+        "dialog": "v-smp:patchnotes/26.10.18"
       }
     },
     {
@@ -36,6 +36,13 @@
       "action": {
         "type": "minecraft:show_dialog",
         "dialog": "v-smp:patchnotes/26.10.14"
+      }
+    },{
+      "label": "Close",
+      "width": 125,
+      "action": {
+        "type": "minecraft:show_dialog",
+        "dialog": "v-smp:patchnotes/main"
       }
     }
   ]

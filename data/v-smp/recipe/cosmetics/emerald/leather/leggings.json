@@ -1,0 +1,20 @@
+{
+    "type": "minecraft:smithing_transform",
+    "base": "minecraft:leather_leggings",
+    "template": "minecraft:structure_block",
+    "result": {
+        "id": "minecraft:leather_leggings",
+        "components": {
+            "minecraft:lore": [
+                {"text":"Emerald Cosmetic","color":"dark_gray","italic":false}
+            ],
+            "minecraft:equippable": {
+                "slot": "legs",
+                "asset_id": "variety:emerald",
+                "equip_sound": "item.armor.equip_diamond"
+            },
+            "item_model": "variety:emerald_leggings",
+            "custom_data": {"cos":true}
+        }
+    }
+}

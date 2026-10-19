@@ -1,0 +1,21 @@
+{
+    "type": "minecraft:smithing_transform",
+    "base": "minecraft:diamond_leggings",
+    "template": "minecraft:jigsaw",
+    "result": {
+        "id": "minecraft:diamond_leggings",
+        "components": {
+            "minecraft:lore": [
+                {"text":"Cat Suit Cosmetic","color":"dark_gray","italic":false}
+            ],
+            "minecraft:equippable": {
+                "slot": "legs",
+                "asset_id": "variety:fuzzy",
+                "equip_sound": "item.armor.equip_leather"
+            },
+            "item_model": "leather_leggings",
+            "dyed_color": 1974320,
+            "custom_data": {"cos":true}
+        }
+    }
+}

@@ -1,0 +1,20 @@
+{
+    "type": "minecraft:smithing_transform",
+    "base": "minecraft:copper_helmet",
+    "template": "minecraft:structure_block",
+    "result": {
+        "id": "minecraft:copper_helmet",
+        "components": {
+            "minecraft:lore": [
+                {"text":"Emerald Cosmetic","color":"dark_gray","italic":false}
+            ],
+            "minecraft:equippable": {
+                "slot": "head",
+                "asset_id": "variety:emerald",
+                "equip_sound": "item.armor.equip_diamond"
+            },
+            "item_model": "variety:emerald_helmet",
+            "custom_data": {"cos":true}
+        }
+    }
+}

@@ -1,0 +1,14 @@
+{
+    "layers": {
+        "humanoid": [
+            {
+                "texture": "variety:orphanite"
+            }
+        ],
+        "humanoid_leggings": [
+            {
+                "texture": "variety:orphanite"
+            }
+        ]
+    }
+}

@@ -1,0 +1,14 @@
+{
+    "layers": {
+        "humanoid": [
+            {
+                "texture": "variety:creg"
+            }
+        ],
+        "humanoid_leggings": [
+            {
+                "texture": "variety:creg"
+            }
+        ]
+    }
+}

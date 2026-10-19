@@ -1,0 +1,20 @@
+{
+    "type": "minecraft:smithing_transform",
+    "base": "minecraft:iron_boots",
+    "template": "minecraft:command_block",
+    "result": {
+        "id": "minecraft:iron_boots",
+        "components": {
+            "minecraft:lore": [
+                {"text":"Orphan Slayer Cosmetic","color":"dark_gray","italic":false}
+            ],
+            "minecraft:equippable": {
+                "slot": "feet",
+                "asset_id": "variety:orphanite",
+                "equip_sound": "item.armor.equip_netherite"
+            },
+            "item_model": "variety:orphanite_boots",
+            "custom_data": {"cos":true}
+        }
+    }
+}

@@ -1,0 +1,20 @@
+{
+    "type": "minecraft:smithing_transform",
+    "base": "minecraft:diamond_helmet",
+    "template": "minecraft:command_block",
+    "result": {
+        "id": "minecraft:diamond_helmet",
+        "components": {
+            "minecraft:lore": [
+                {"text":"Orphan Slayer Cosmetic","color":"dark_gray","italic":false}
+            ],
+            "minecraft:equippable": {
+                "slot": "head",
+                "asset_id": "variety:orphanite",
+                "equip_sound": "item.armor.equip_netherite"
+            },
+            "item_model": "variety:orphanite_helmet",
+            "custom_data": {"cos":true}
+        }
+    }
+}

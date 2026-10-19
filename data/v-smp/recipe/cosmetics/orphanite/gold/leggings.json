@@ -1,0 +1,20 @@
+{
+    "type": "minecraft:smithing_transform",
+    "base": "minecraft:golden_leggings",
+    "template": "minecraft:command_block",
+    "result": {
+        "id": "minecraft:golden_leggings",
+        "components": {
+            "minecraft:lore": [
+                {"text":"Orphan Slayer Cosmetic","color":"dark_gray","italic":false}
+            ],
+            "minecraft:equippable": {
+                "slot": "legs",
+                "asset_id": "variety:orphanite",
+                "equip_sound": "item.armor.equip_netherite"
+            },
+            "item_model": "variety:orphanite_leggings",
+            "custom_data": {"cos":true}
+        }
+    }
+}

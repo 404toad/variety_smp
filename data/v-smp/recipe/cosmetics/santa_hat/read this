@@ -1,0 +1,16 @@
+HEY. YOU.
+
+You have until November 31st to finish this part
+GOTTA GET THIS DONE FOR CHRISTMAS!
+
+This is for the cosmetic shop when your ready to put it in:
+
+{
+      "label": "Santa Hat",
+      "tooltip": "10 Iron; Applies To [HELMET]",
+      "width": 60,
+      "action": {
+        "type": "minecraft:dynamic/run_command",
+        "template": "trigger cos_santa set $(amt)"
+      }
+    },
