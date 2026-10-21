@@ -1,5 +1,3 @@
-effect give KANGAROO7145 night_vision infinite 255 true
-
 execute as @a store result score @s diamonds run clear @s diamond 0
 execute as @a store result score @s netherite run clear @s netherite_ingot 0
 execute as @a store result score @s elytra run clear @s elytra 0
@@ -68,9 +66,6 @@ execute at @e[tag=spawner.cow] if block ~ ~ ~ air run summon minecraft:interacti
 execute at @e[tag=spawner.sheep] if block ~ ~ ~ air run summon minecraft:interaction ~ ~ ~ {Tags:[spawner.remove.sheep],height:1.1,width:1.1,CustomName:[{text:"[",color:red},{keybind:"key.use",color:"red"},{text:"] REMOVE",color:"red"}]}
 execute at @e[tag=spawner.pig] if block ~ ~ ~ air run summon minecraft:interaction ~ ~ ~ {Tags:[spawner.remove.pig],height:1.1,width:1.1,CustomName:[{text:"[",color:red},{keybind:"key.use",color:"red"},{text:"] REMOVE",color:"red"}]}
 
-
-
-
 execute at @e[tag=spawner.villager] if block ~ ~ ~ air run playsound block.spawner.place master @a ~ ~ ~
 execute at @e[tag=spawner.zombie] if block ~ ~ ~ air run playsound block.spawner.place master @a ~ ~ ~
 execute at @e[tag=spawner.skeleton] if block ~ ~ ~ air run playsound block.spawner.place master @a ~ ~ ~
@@ -78,7 +73,6 @@ execute at @e[tag=spawner.creeper] if block ~ ~ ~ air run playsound block.spawne
 execute at @e[tag=spawner.cow] if block ~ ~ ~ air run playsound block.spawner.place master @a ~ ~ ~
 execute at @e[tag=spawner.sheep] if block ~ ~ ~ air run playsound block.spawner.place master @a ~ ~ ~
 execute at @e[tag=spawner.pig] if block ~ ~ ~ air run playsound block.spawner.place master @a ~ ~ ~
-
 
 execute at @e[tag=spawner.villager] if block ~ ~ ~ air run setblock ~ ~ ~ minecraft:spawner{Delay:110s,MaxNearbyEntities:6s,MaxSpawnDelay:800s,MinSpawnDelay:200s,RequiredPlayerRange:16s,SpawnCount:4s,SpawnData:{entity:{id:"minecraft:villager"}},SpawnPotentials:[],SpawnRange:4s}
 execute at @e[tag=spawner.zombie] if block ~ ~ ~ air run setblock ~ ~ ~ minecraft:spawner{Delay:110s,MaxNearbyEntities:6s,MaxSpawnDelay:800s,MinSpawnDelay:200s,RequiredPlayerRange:16s,SpawnCount:4s,SpawnData:{entity:{id:"minecraft:zombie"}},SpawnPotentials:[],SpawnRange:4s}
@@ -88,8 +82,6 @@ execute at @e[tag=spawner.cow] if block ~ ~ ~ air run setblock ~ ~ ~ minecraft:s
 execute at @e[tag=spawner.sheep] if block ~ ~ ~ air run setblock ~ ~ ~ minecraft:spawner{Delay:110s,MaxNearbyEntities:6s,MaxSpawnDelay:800s,MinSpawnDelay:200s,RequiredPlayerRange:16s,SpawnCount:4s,SpawnData:{entity:{id:"minecraft:sheep"}},SpawnPotentials:[],SpawnRange:4s}
 execute at @e[tag=spawner.pig] if block ~ ~ ~ air run setblock ~ ~ ~ minecraft:spawner{Delay:110s,MaxNearbyEntities:6s,MaxSpawnDelay:800s,MinSpawnDelay:200s,RequiredPlayerRange:16s,SpawnCount:4s,SpawnData:{entity:{id:"minecraft:pig"}},SpawnPotentials:[],SpawnRange:4s}
 
-
-
 execute as @e[tag=spawner.remove.villager] at @s if entity @n[tag=spawner.villager] on target run function v-smp:shop/spawner/remove {id:villager,rarity:"epic",name:"Villager"}
 execute as @e[tag=spawner.remove.zombie] at @s if entity @n[tag=spawner.zombie] on target run function v-smp:shop/spawner/remove {id:zombie,rarity:"common",name:"Zombie"}
 execute as @e[tag=spawner.remove.skeleton] at @s if entity @n[tag=spawner.skeleton] on target run function v-smp:shop/spawner/remove {id:skeleton,rarity:"uncommon",name:"Skeleton"}
@@ -98,8 +90,6 @@ execute as @e[tag=spawner.remove.cow] at @s if entity @n[tag=spawner.cow] on tar
 execute as @e[tag=spawner.remove.sheep] at @s if entity @n[tag=spawner.sheep] on target run function v-smp:shop/spawner/remove {id:sheep,rarity:"common",name:"Sheep"}
 execute as @e[tag=spawner.remove.pig] at @s if entity @n[tag=spawner.pig] on target run function v-smp:shop/spawner/remove {id:pig,rarity:"rare",name:"Pig"}
 
-#mudwing
-execute as @a[nbt={SelectedItem:{components:{"minecraft:custom_name":"❤ Mudwing ❤"}}}] run item modify entity @s weapon {function:"minecraft:set_components",components:{item_model:"netherite_sword",custom_name:{text:"Netherite Sword",italic:false}}}
 
 
 #unbreakable
@@ -174,6 +164,3 @@ execute as @a if score @s cos_key matches 1.. run scoreboard players remove @s c
 
 
 recipe give @a *
-
-tellraw @a[scores={update=..1}] ["\n",{atlas:"minecraft:gui",sprite:"minecraft:icon/news"},{text:" New Server Update! ",color:green},{atlas:"minecraft:gui",sprite:"minecraft:icon/news"},"\n",{text:"Click here to view patch notes to see what changed!",color:gold,click_event:{action:show_dialog,dialog:"v-smp:patchnotes/26.10.18"},bold:true},"\n"]
-scoreboard players reset @s update
