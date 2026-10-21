@@ -5,7 +5,7 @@
             "text": "Welcome to the ",
             "hover_event": {
                 "action": "show_text",
-                "value": "You can purchase certain reward items here"
+                "value": "You can purchase certain items here"
             }
         },
         {
@@ -13,14 +13,14 @@
             "color": "yellow",
             "hover_event": {
                 "action": "show_text",
-                "value": "You can purchase certain reward items here"
+                "value": "You can purchase certain items here"
             }
         },
         {
             "text": "!",
             "hover_event": {
                 "action": "show_text",
-                "value": "You can purchase certain reward items here"
+                "value": "You can purchase certain items here"
             }
         }
     ],
@@ -28,20 +28,8 @@
     "body": {
         "type": "minecraft:plain_message",
         "contents": {
-            "text": "Here you can buy some of the custom items I created. More will be added as they come out.",
-            "color": "white",
-            "extra": [
-                {
-                    "text": "\n\nClick here to suggest items",
-                    "color": "aqua",
-                    "click_event": {
-                        "action": "open_url",
-                        "url": "https://discord.gg/Rt7dh629gG"
-                    },
-                    "underlined": true,
-                    "bold": true
-                }
-            ]
+            "text": "Here you can buy some of the custom items I created.",
+            "color": "white"
         }
     },
     "inputs": [
