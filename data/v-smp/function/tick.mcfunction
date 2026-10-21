@@ -21,10 +21,10 @@ scoreboard players enable @a shop_shovel
 scoreboard players enable @a shop_8ball
 scoreboard players enable @a shop_carrier
 #cosmetics
-scoreboard players enable @a cos_orphan
-scoreboard players enable @a cos_santa
-scoreboard players enable @a cos_cat
-scoreboard players enable @a cos_emerald
+scoreboard players reset @a cos_orphan
+scoreboard players reset @a cos_santa
+scoreboard players reset @a cos_cat
+scoreboard players reset @a cos_emerald
 scoreboard players enable @a cos_key
 scoreboard players enable @a strip_trims
 #spawners
